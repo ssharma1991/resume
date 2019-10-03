@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Shashank Sharma
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = blue %Colour of citations
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+% Main Headings like Company name with Tabular structure of Company & Place // designation & Duration
+\newcommand{\resumeHeading}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \vspace{-2pt}\\ \vspace{1pt}
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+      %\vspace{-5pt}
+}
+% Sub Headings e.g. Project Titles
+\newcommand{\resumeSubheading}[1]{
+      {\small\textbf{#1}} \\
+      %\vspace{-5pt}
+}
+
+% For another role in same organization
+\newcommand{\resumeSubheadingWithDate}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2}\\
+    \end{tabular*}
+    \vspace{+2pt}
+}
+
+\newcommand{\resumeSubheadingNew}[1]{
+      {\small{#1}} \\
+      %\vspace{-5pt}
+}
+
+% Reducing Gap Between Sections
+\newcommand{\resumeSection}[1]{
+\vspace{-12pt}
+\section{\textbf{#1}}
+}
+
+% Bullet list for details
+\newcommand{\resumeItemListStart}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=14pt]
+}
+\newcommand{\resumeItemListEnd}{
+\vspace{+7pt}
+\end{itemize}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+      {#1 \vspace{-7pt}
+      }
+  }
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+ 700, Health Sciences Drive, &\textbf{{\LARGE Shashank Sharma}} & Email : \href{mailto:shashank.sharma@stonybrook.com}{shashank.sharma@stonybrook.edu}\\
+ Stony Brook, New York  & \href{https://www.linkedin.com/in/ssharma1991/}{linkedin.com/in/ssharma1991}, \href{https://github.com/ssharma1991}{github.com/ssharma1991} & Mobile : +1-631-512-0029 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+    \resumeHeading
+      {Stony Brook University}{Stony Brook, NY}
+      {Ph.D., Mechanical (Concentration: Design and Robotics, Minor: Applied Mathematics), GPA 3.95}{Aug. 2015 -- Present}
+    \resumeItemListStart
+      \resumeItem{\textbf{Relevent Coursework :} Robotics, Advanced Dynamics, Vibration and Control, Kinematic Analysis and Synthesis,  Applied Stress Analysis, Product Design Optimization, Geometric Modeling, Analysis of Algorithms}
+      %\resumeItem{Developing an Mechanical Design tool, under the guidance of Dr. Purwar; funded by \$450K \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1563413}{NSF grant.}}
+    \resumeItemListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+    \resumeHeading
+      {Stony Brook University}{Stony Brook, NY}
+      {Research Assistant}{May 2017 -- Present}
+      \resumeItemListStart
+      	\resumeItem{Developing a Computational Framework for Data-Driven Mechanism Design Innovation supported by \$450K \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1563413}{NSF grant}.}
+      	\resumeItem{Created \href{http://cadcam.eng.sunysb.edu/}{MotionGen} a web-based mechanism design framework. Uses MEAN (MongoDB, Express.js, Angular.js, Node.js) stack to create a RESTful web service based on MVC architecture. iOS and Android app created using Apache Cordova framework.}
+      	\resumeItem{Path synthesis of mechanisms based on Fourier descriptor fitting using Nelder-Mead and Simulated Annealing optimization.}
+      	\resumeItem{Mixed motion and path mechanism synthesis using optimal non-uniform DFT and Singular Value Decomposition.}
+      	\resumeItem{Real-time simulation of planar and spherical mechanisms with prismatic and revolute joints using Newton-Rhapson optimization.}
+      	\resumeItem{Synthesized path tracing mechanisms with optimum transmission angle using wavelet features in neural network.}
+      	\resumeItem{Developing Spatial mechanisms synthesis techniques using Homotopy methods for type and dimensional synthesis.}
+      \resumeItemListEnd
+
+      \vspace{-5pt}
+      \resumeSubheadingWithDate{Teaching Assistant}{Aug 2016 -- Apr 2017}
+      \resumeItemListStart
+      	\resumeItem{Developed \href{http://snappyxo.com/}{SnappyXO}, a laser-cut design-driven robotics platform which enables designing mechanisms, structures, and robots.}
+      	\resumeItem{Advised 250\texttt{+} undergraduates in MEC101-Freshman Design Innovation and MEC 102-Engineering Computing.}
+      \resumeItemListEnd
+      
+      \resumeHeading
+      {Indian Institute of Information Technology}{Jabalpur, India}
+      {Junior Research Fellow}{May 2014 -- May 2015}
+      \resumeItemListStart
+      	\resumeItem{Led a \$70k\texttt{+} research project funded by the Science and Engineering Research Board titled “Development of Additive-Subtractive Integrated Rapid Prototyping System for Improved Part Quality”.}
+      	\resumeItem{Designed and Fabricated a Pellet based Screw Extrusion process to enable the use of CNC machines as hybrid 3D printers.}
+      	\resumeItem{Developed Toolpath Planning strategies to manufacture CAD models using Hybrid Manufacturing techniques.}
+      \resumeItemListEnd
+      
+
+%--------PROGRAMMING SKILLS------------
+\resumeSection{Skills}
+\vspace{+7pt}
+    \resumeItemListStart
+      \resumeItem{\textbf{Languages :} Proficient in Python, Javascript, C\texttt{++}, MATLAB, Mathematica}
+      \resumeItem{\textbf{CAD softwares :} Solidworks, CATIA, PTC Pro/ENGINEER (CREO), Ansys (CFD and Mechanical), Autodesk Inventor, Autodesk AutoCAD, Autodesk Moldflow, FeatureCAM , MSC-Adams, ZWCAD, HyperMesh, OptiStruct, Materialize Magics, Materialize Mimics, CNC G-M Code, Minitab}
+      \resumeItem{\textbf{Tools \& Technologies :} Keras, Tensorflow, OpenCV, HTML, CSS, Canvas, Node.js, Express.js, Redis, Apache Cordova, OpenGL, Jupyter, Anaconda}
+    \resumeItemListEnd
+
+
+%-----------PROJECTS-----------------
+    \resumeSection{Relevant Projects}
+    
+    \resumeHeading{Lane Detection for Autonomous Vehicles}{Udacity}{Python, Jupyter, OpenCV \href{https://github.com/ssharma1991/autonomous-car-basic-lane-detection}{github.com/ssharma1991/autonomous-car-basic-lane-detection}}{May 2019 -- Aug 2019}
+    \resumeItemListStart
+    	\resumeItem{Created a robust image processing pipeline to detect a highway lane in an image, pre-recorded video, or live-feed from dashcam.}
+    	\resumeItem{Calculated the car's position within lane and lane's radius of curvature using perspective transform and polynomial fitting.}
+    \resumeItemListEnd
+
+	\vspace{-2pt}
+    \resumeHeading{Traffic Sign Classification}{Udacity}{Python, Jupyter, OpenCV, TensorFlow \href{https://github.com/ssharma1991/autonomous-car-traffic-sign-classification}{github.com/ssharma1991/autonomous-car-traffic-sign-classification}}{May 2019 -- Aug 2019}
+    \resumeItemListStart
+	    \resumeItem{Created a LeNet inspired convolution neural network using TensorFlow to classify the \href{http://benchmark.ini.rub.de/?section=gtsrb}{GTSRB} traffic sign dataset.}
+	    \resumeItem{Implemented data augmentation and image enhancement using OpenCV to achieve 94.8\% accuracy on test dataset.}
+    \resumeItemListEnd
+    
+    \vspace{-2pt}
+    \resumeHeading{Behavioral Cloning}{Udacity}{Python, Jupyter, Keras \href{https://github.com/ssharma1991/autonomous-car-behavioral-cloning}{github.com/ssharma1991/autonomous-car-behavioral-cloning}}{May 2019 -- Aug 2019}
+    \resumeItemListStart
+	    \resumeItem{Created an end-to-end convolution neural network using Keras that predicts steering angles from dash-cam images.}
+	    \resumeItem{Used this model to autonomously steer a car  around a virtual test track after neural network tuning and data augmentation.}
+    \resumeItemListEnd
+    
+    \vspace{-2pt}
+    \resumeHeading{Sensor Fusion}{Udacity}{C\texttt{++} \href{https://github.com/ssharma1991/autonomous-car-sensor-fusion}{github.com/ssharma1991/autonomous-car-sensor-fusion}}{May 2019 -- Aug 2019}
+    \resumeItemListStart
+	    \resumeItem{Processed LIDAR and RADAR data to estimate the position of a moving car with extended Kalman filter.}
+    \resumeItemListEnd
+    
+    
+    %Combine all project in one later
+    %\resumeHeading{Self-Driving Car}{Udacity Nanodegree}{Python, Jupyter, Anaconda, OpenCV, TensorFlow, Keras, C\texttt{++}}{Aug2019 -- Present}
+    %\resumeItemListStart
+    %	\resumeItem{Developed lane-detection software using OpenCV and tested it on a real vehicle.}
+    %	\resumeItem{Used Convolutional Neural Net for traffic sign classification.}
+    %	\resumeItem{Train a Deep Neural Net to drive a car in virtual environment.}
+    %	\resumeItem{Sensor Fusion by implementing an Extended Kalman Filter in C++.}
+    %\resumeItemListEnd
+
+    
+    \vspace{-2pt}
+    \resumeHeading{Two Armed Robotic Manipulator}{MEC529 Robotics}{Matlab}{March 2016 -- May 2016}
+    \resumeItemListStart
+    	\resumeItem{Optimal motion planning in Dual Quaternion space to pick and place objects considering manipulator reachability.}
+    \resumeItemListEnd
+
+    \vspace{-2pt}
+    \resumeHeading{Interactive Manipulation of NURBS Surfaces}{MEC572 Geomtric Modelling}{C\texttt{++}, OpenGL, Qt5}{March 2016 -- May 2016}
+    \resumeItemListStart
+      \resumeItem{OpenGL based implementation in C\texttt{++} for interactive manipulation of Non Uniform Rational B-Spline Surfaces.}
+    \resumeItemListEnd
+    
+    %\vspace{-2pt}
+    %\resumeHeading{Fracture test analysis for compact tension specimen}{}{Abacus}{Feb 2017 –- May 2017}
+    %\resumeItemListStart
+    %	\resumeItem{Finite element analysis of a fracture specimen to predict and validate deformations at the crack tip.}
+    %\resumeItemListEnd
+
+\resumeSection{Selected Publications}
+\vspace{+7pt}
+    \resumeItemListStart
+    
+      \resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{A Motion Synthesis Approach to Solving Alt-Burmester Problem by Exploiting Fourier Descriptor Relationship Between Path and Orientation.}, ASME J. Mechanisms Robotics; doi:10.1115/1.4042054}
+      \resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{An Optimal Parametrization Scheme for Path Generation Using Fourier Descriptors for Four-Bar Mechanism Synthesis.}, ASME J. Computing and Information Science in Engineering; doi:10.1115/1.4041566}
+      
+    \resumeItemListEnd
+
+\end{document}
