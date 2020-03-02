@@ -124,12 +124,12 @@
 \resumeSection{Education}
 	\resumeHeading
 	{Stony Brook University}{Stony Brook, NY}
-	{Ph.D., Mechanical (Concentration: Design and Robotics, Minor: Applied Mathematics), GPA 3.95}{Aug. 2015 -- Present}
+	{Ph.D., Mechanical (Concentration: Design and Robotics, Minor: Applied Mathematics), GPA 3.95}{Aug 2015 -- Present}
 	\resumeItemListStart
 	\resumeItem{\textbf{Relevant Courses:} Robotics, Advanced Dynamics, Vibration and Control, Kinematic Analysis and Synthesis,  Applied Stress Analysis, Product Design Optimization, Geometric Modeling, Analysis of Algorithms}
 	\resumeItemListEnd
 	
-	\resumeHeading{Udacity, School of Autonomous Systems}{Mountain View, CA}{Self Driving Car Engineer Nanodegree}{Mar. 2019 -- Present}
+	\resumeHeading{Udacity, School of Autonomous Systems}{Mountain View, CA}{Self Driving Car Engineer Nanodegree}{Mar 2019 -- Mar 2020}
 	\resumeItemListStart
 	\resumeItem{\textbf{Relevant Areas:} Computer Vision, Deep Learning, Sensor Fusion, Localization, Planning, Control, System Integration}
 	\resumeItemListEnd
@@ -150,9 +150,8 @@
     \vspace{-5pt}
     \resumeSubheadingWithDate{Teaching Assistant}{Aug 2016 -- Apr 2017}
     \resumeItemListStart
-    \resumeItem{Developed \href{http://snappyxo.com/}{SnappyXO}, a laser-cut design-driven robotics platform that enables designing mechanisms, structures, and robots.}
-    \resumeItem{Advised 250\texttt{+} undergraduate students in MEC101-Freshman Design Innovation and MEC 102-Engineering Computing.}
-    \resumeItem{Mentored students for their Robot Design projects which gained recognition from the Office of President at university.}
+    \resumeItem{Developed \href{http://snappyxo.com/}{SnappyXO}, a laser-cut design-driven robotics platform that enables designing mechanisms, structures, and robots. It has successfully raised \$16K+ on \href{https://www.indiegogo.com/projects/snappyxo-a-design-driven-robotics-education-kit}{Indiegogo} for a crowdfunding campaign.}
+    \resumeItem{Advised 250\texttt{+} students in MEC101-Freshman Design Innovation, MEC 102-Engineering Computing, and Vertically Integrated Projects(VIP) Program. The Robot Design projects gained recognition from the Office of President at university.}
     \resumeItemListEnd
     
     \resumeHeading
@@ -160,8 +159,7 @@
     {Junior Research Fellow}{May 2014 -- May 2015}
     \resumeItemListStart
     \resumeItem{Led a \$70k\texttt{+} research project funded by the Science and Engineering Research Board titled “Development of Additive-Subtractive Integrated Rapid Prototyping System for Improved Part Quality”.}
-    \resumeItem{Spearheaded design and manufacturing teams to create a new hybrid 3D printing process using Pellet based Screw Extruder with CNC machines}
-    \resumeItem{Developed Toolpath Planning strategies to manufacture CAD models using Hybrid Manufacturing techniques.}
+    \resumeItem{Spearheaded design and manufacturing teams to create a new hybrid 3D printing process using Pellet based Screw Extruder with CNC machines. Created Toolpath Planning strategies to manufacture CAD models using Hybrid Manufacturing techniques.}
     \resumeItemListEnd
 
 
@@ -169,47 +167,30 @@
 %-----------PROJECTS-----------------
 \resumeSection{Relevant Projects}
     
-    \resumeHeading{Lane Detection for Autonomous Vehicles}{Udacity}{Python, Jupyter, OpenCV \href{https://github.com/ssharma1991/autonomous-car-basic-lane-detection}{github.com/ssharma1991/autonomous-car-basic-lane-detection}}{May 2019 -- Aug 2019}
+    \resumeHeading{Self Driving Car}{Udacity}{Python, Jupyter, OpenCV, TensorFlow, Keras, C\texttt{++}, ROS}{May 2019 -- Aug 2019}
     \resumeItemListStart
-    \resumeItem{Created a robust image processing pipeline to detect a highway lane in an image, pre-recorded video, or live-feed from dashcam.}
-    \resumeItem{Calculated the car's position within lane and lane's radius of curvature using perspective transform and polynomial fitting.}
+    \resumeItem{Perception: A robust image processing pipeline is created to detect highway lanes in dashcam live-feed.}
+    \resumeItem{Localization: Car's position within lane and lane curvature is calculated using perspective transform and polynomial fitting.}
+    \resumeItem{Perception: LeNet inspired convolution neural network is developed to detect and classify 40+ kinds of traffic signs.}
+    \resumeItem{Motion Planning: Cloned human behavior using an end-to-end neural network to autonomously steer a car using camera input.}
+    \resumeItem{Sensor Fusion: Car location is estimated using an extended Kalman filter which acts on LIDAR and RADAR sensors data.}
+    \resumeItem{Path Planning: A Finite State Machine based planner is created to achieve autonomous highway driving with other cars.}
+    \resumeItem{Control: A PID controller is implemented to maneuver a vehicle around a virtual track using steering, throttle and brake.}
+    \resumeItem{Localization: A 2D particle filter for sparse localization is designed and uses GPS and sensor data with a landmark map.}
+    \resumeItem{System Integration: Robot Operation System (ROS) is used to  combine Perception, Localization, Planning, and Control.}
     \resumeItemListEnd
     
     \vspace{-2pt}
-    \resumeHeading{Traffic Sign Classification}{Udacity}{Python, Jupyter, OpenCV, TensorFlow \href{https://github.com/ssharma1991/autonomous-car-traffic-sign-classification}{github.com/ssharma1991/autonomous-car-traffic-sign-classification}}{May 2019 -- Aug 2019}
-    \resumeItemListStart
-    \resumeItem{Developed a LeNet inspired convolution neural network using TensorFlow to classify the \href{http://benchmark.ini.rub.de/?section=gtsrb}{GTSRB} traffic sign dataset.}
-    \resumeItem{Achieved 94.8\% accuracy on test dataset by data augmentation and image enhancement using OpenCV. }
-    \resumeItemListEnd
-    
-    \vspace{-2pt}
-    \resumeHeading{Behavioral Cloning}{Udacity}{Python, Jupyter, Keras \href{https://github.com/ssharma1991/autonomous-car-behavioral-cloning}{github.com/ssharma1991/autonomous-car-behavioral-cloning}}{May 2019 -- Aug 2019}
-    \resumeItemListStart
-    \resumeItem{Designed an end-to-end convolution neural network using Keras that predicts steering angles from dash-cam images.}
-    \resumeItem{Successfully used this model to autonomously steer a car  around a virtual test track after neural network tuning and data augmentation.}
-    \resumeItemListEnd
-    
-    \vspace{-2pt}
-    \resumeHeading{Sensor Fusion}{Udacity}{C\texttt{++} \href{https://github.com/ssharma1991/autonomous-car-sensor-fusion}{github.com/ssharma1991/autonomous-car-sensor-fusion}}{May 2019 -- Aug 2019}
-    \resumeItemListStart
-    \resumeItem{Implemented car location estimation algorithm using extended Kalman filter based on LIDAR and RADAR sensors data.}
-    \resumeItemListEnd
-    
-    %Combine all project in one later
-    %\resumeHeading{Self-Driving Car}{Udacity Nanodegree}{Python, Jupyter, Anaconda, OpenCV, TensorFlow, Keras, C\texttt{++}}{Aug2019 -- Present}
-    %\resumeItemListStart
-    %	\resumeItem{Developed lane-detection software using OpenCV and tested it on a real vehicle.}
-    %	\resumeItem{Used Convolutional Neural Net for traffic sign classification.}
-    %	\resumeItem{Train a Deep Neural Net to drive a car in virtual environment.}
-    %	\resumeItem{Sensor Fusion by implementing an Extended Kalman Filter in C++.}
-    %\resumeItemListEnd
-    
-    \vspace{-2pt}
-    \resumeHeading{Two Armed Robotic Manipulator}{MEC529 Robotics}{Matlab}{March 2016 -- May 2016}
+    \resumeHeading{Two Armed Robotic Manipulator}{MEC529 Robotics}{Matlab}{Mar 2016 -- May 2016}
     \resumeItemListStart
     \resumeItem{Optimal motion planning in Dual Quaternion space to pick and place objects considering manipulator reachability.}
     \resumeItemListEnd
     
+    \vspace{-2pt}
+    \resumeHeading{Interactive Manipulation of NURBS Surfaces}{MEC572 Geometric Modelling}{C\texttt{++}, OpenGL, Qt5}{Mar 2016 -- May 2016}
+    \resumeItemListStart
+    \resumeItem{OpenGL based implementation in C\texttt{++} for interactive manipulation of Non Uniform Rational B-Spline Surfaces.}
+    \resumeItemListEnd
 
 
 %-------- SKILLS------------
@@ -217,8 +198,8 @@
 	\vspace{+7pt}
 	\resumeItemListStart
 	\resumeItem{\textbf{Languages :} Python, Javascript, C\texttt{++}, MATLAB, Mathematica}
-	\resumeItem{\textbf{CAD softwares :} Solidworks, Autodesk Inventor, PTC Creo, CATIA, Ansys (CFD and Mechanical), Autodesk AutoCAD, Autodesk Moldflow, FeatureCAM , MSC-Adams, ZWCAD, Altair HyperMesh, Altair OptiStruct, Materialize Magics, Materialize Mimics, CNC G-M Code, Minitab}
-	\resumeItem{\textbf{Tools \& Technologies :} Keras, Tensorflow, OpenCV, HTML, CSS, Canvas, Node.js, Express.js, Redis, Apache Cordova, OpenGL, Jupyter, Anaconda, Git, npm, MongoDB}
+	\resumeItem{\textbf{CAD softwares :} Solidworks, Autodesk Inventor, PTC Creo, CATIA, Ansys (CFD and Mechanical), Autodesk AutoCAD, Autodesk Moldflow, FeatureCAM , MSC-Adams, ZWCAD, Altair HyperMesh, Altair OptiStruct, Materialize Magics, Materialize Mimics, CNC G-M Code}
+	\resumeItem{\textbf{Tools \& Technologies :} Keras, Tensorflow, OpenCV, HTML, CSS, Canvas, Node.js, Express.js, Redis, Apache Cordova, OpenGL, Jupyter, Anaconda, Git, npm, MongoDB, Docker, ROS}
 	\resumeItemListEnd
 
 
