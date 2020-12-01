@@ -17,7 +17,6 @@
 \usepackage{wasysym}
 \usepackage{fontawesome}
 
-
 \hypersetup{
   colorlinks   = true, %Colours links instead of ugly boxes
   urlcolor     = blue, %Colour for external hyperlinks
@@ -134,12 +133,12 @@
 \resumeSection{Education}
     \resumeHeading
     {Stony Brook University}{Stony Brook, NY}
-    {Ph.D., Mechanical (Concentration: Design and Robotics, Minor: Applied Mathematics), GPA 3.95}{Aug 2015 -- Present}
+    {Ph.D., Mechanical (Concentration: Design and Robotics, Minor: Applied Mathematics), GPA 3.95}{Aug. 2015 -- Present}
     \resumeItemListStart
     \resumeItem{\textbf{Relevant Courses:} Robotics, Advanced Dynamics, Vibration and Control, Kinematic Analysis and Synthesis,  Applied Stress Analysis, Product Design Optimization, Geometric Modeling, Analysis of Algorithms}
+    %\resumeItem{Developing a Mechanical Design tool, under the guidance of Dr. Purwar; funded by \$450K \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1563413}{NSF grant.}}
     \resumeItemListEnd
     
-    \vspace{-4pt}
     \resumeHeading{Udacity, School of Autonomous Systems}{Mountain View, CA}{Self Driving Car Engineer Nanodegree}{Mar 2019 -- Mar 2020}
     \resumeItemListStart
     \resumeItem{\textbf{Relevant Areas:} Computer Vision, Deep Learning, Sensor Fusion, Localization, Planning, Control, System Integration}
@@ -166,7 +165,6 @@
     \resumeItem{Advised 250\texttt{+} students in MEC101-Freshman Design Innovation, MEC 102-Engineering Computing, and Vertically Integrated Projects(VIP) Program. The Robot Design projects gained recognition from the Office of President at university.}
     \resumeItemListEnd
     
-    \vspace{-4pt}
     \resumeHeading
     {Vivonics, Inc.}{Stony Brook, NY}
     {Product Design Intern}{Feb 2016 –- Aug 2016}
@@ -175,7 +173,6 @@
     \resumeItem{Generated concepts for an interpupillary distance adjusting mechanism focusing on manufacturability and robustness.}
     \resumeItemListEnd
     
-    \vspace{-4pt}
     \resumeHeading
     {Leviathan Energy}{Stony Brook, NY}
     {Strategic Partnership for Industrial Resurgence (SPIR) Intern}{Feb 2016 – May 2016}
@@ -184,7 +181,6 @@
     \resumeItem{Created engineering models using Solidworks and Autodesk Inventor and fabricated parts by FDM based 3D printing.}
     \resumeItemListEnd
     
-    \vspace{-4pt}
     \resumeHeading
     {Indian Institute of Information Technology}{Jabalpur, India}
     {Junior Research Fellow}{May 2014 -- May 2015}
@@ -197,29 +193,90 @@
 
 %-----------PROJECTS-----------------
 \resumeSection{Relevant Projects}
-    \resumeHeadingwithDate{Fracture test analysis for compact tension specimen}{Feb 2017 -- May 2017}
-    \resumeItemListStart
-    \resumeItem{Finite element analysis of a fracture specimen to predict and validate deformations at the crack tip using Abacus.}
-    \resumeItemListEnd
-    
-    \vspace{-4pt}
-    \resumeHeadingwithDate{Conceptual Design}{Aug 2015 -- May 2016}
-    \resumeItemListStart
-    \resumeItem{Formulation of design specification/criteria and conceptual design generation of an Ergonomic Nutcracker and Stone Crusher.}
-    \resumeItemListEnd
-    
-    \vspace{-4pt}
-    \resumeHeadingwithDate{Quality Improvement of Aircraft Wing Assembly}{Aug 2015 -- Nov 2015}
-    \resumeItemListStart
-    \resumeItem{Identifying and correcting the root cause for high rejection rate of final assembly using Pareto Charts, Cause and Effect Diagrams, Control Charts and Histograms.}
-    \resumeItemListEnd
-    
-    \vspace{-4pt}
-    \resumeHeadingwithDate{Mold Design and Manufacturing}{May 2012 -- Nov 2012}
-    \resumeItemListStart
-    \resumeItem{Designed and manufactured molds for irrigation industry products for Injection Molding Process.}
-    \resumeItem{Flow Analysis results were used to optimize design and a Pricing Strategy was developed for industry.}
-    \resumeItemListEnd
+
+	\resumeHeading{Self Driving Car subsystem design and integration}{Udacity}{Python, Jupyter, OpenCV, TensorFlow, Keras, C\texttt{++}, ROS}{May 2019 -- Aug 2019}
+	\resumeItemListStart
+	\resumeItem{Detection: A robust image processing pipeline is created to detect highway lanes in dashcam live-feed.}
+	\resumeItem{Perception: Car's position within lane and lane curvature is calculated using perspective transform and polynomial fitting.}
+	\resumeItem{Classification: LeNet inspired convolution neural network is developed to detect and classify 40+ kinds of traffic signs.}
+	\resumeItem{Deep Learning: Cloned human behavior using an end-to-end neural network to autonomously steer a car using camera input.}
+	\resumeItem{Sensor Fusion: Car location is estimated using an extended Kalman filter which acts on LIDAR and RADAR sensors data.}
+	\resumeItem{Localization: A 2D particle filter for sparse localization is designed and uses GPS and sensor data with a landmark map.}
+	\resumeItem{Trajectory Planning: A Finite State Machine based planner is created to achieve autonomous highway driving with other cars.}
+	\resumeItem{Control: A PID controller is implemented to maneuver a vehicle around a virtual track using steering, throttle and brake.}
+	\resumeItem{System Integration: Robot Operation System (ROS) is used to robustly combine Perception, Planning, and Control.}
+	\resumeItemListEnd
+	
+	%\resumeHeading{Lane Detection for Autonomous Vehicles}{Udacity}{Python, Jupyter, OpenCV \href{https://github.com/ssharma1991/autonomous-car-basic-lane-detection}{github.com/ssharma1991/autonomous-car-basic-lane-detection}}{May 2019 -- Aug 2019}
+	%\resumeItemListStart
+	%\resumeItem{Created a robust image processing pipeline to detect a highway lane in an image, pre-recorded video, or live-feed from dashcam.}
+	%\resumeItem{Calculated the car's position within lane and lane's radius of curvature using perspective transform and polynomial fitting.}
+	%\resumeItemListEnd
+	
+	%\vspace{-2pt}
+	%\resumeHeading{Traffic Sign Classification}{Udacity}{Python, Jupyter, OpenCV, TensorFlow \href{https://github.com/ssharma1991/autonomous-car-traffic-sign-classification}{github.com/ssharma1991/autonomous-car-traffic-sign-classification}}{May 2019 -- Aug 2019}
+	%\resumeItemListStart
+	%\resumeItem{Developed a LeNet inspired convolution neural network using TensorFlow to classify the \href{http://benchmark.ini.rub.de/?section=gtsrb}{GTSRB} traffic sign dataset.}
+	%\resumeItem{Achieved 94.8\% accuracy on test dataset by data augmentation and image enhancement using OpenCV. }
+	%\resumeItemListEnd
+	
+	%\vspace{-2pt}
+	%\resumeHeading{Behavioral Cloning}{Udacity}{Python, Jupyter, Keras \href{https://github.com/ssharma1991/autonomous-car-behavioral-cloning}{github.com/ssharma1991/autonomous-car-behavioral-cloning}}{May 2019 -- Aug 2019}
+	%\resumeItemListStart
+	%\resumeItem{Designed an end-to-end convolution neural network using Keras that predicts steering angles from dash-cam images.}
+	%\resumeItem{Successfully used this model to autonomously steer a car  around a virtual test track after neural network tuning and data augmentation.}
+	%\resumeItemListEnd
+	
+	%\vspace{-2pt}
+	%\resumeHeading{Sensor Fusion}{Udacity}{C\texttt{++} \href{https://github.com/ssharma1991/autonomous-car-sensor-fusion}{github.com/ssharma1991/autonomous-car-sensor-fusion}}{May 2019 -- Aug 2019}
+	%\resumeItemListStart
+	%\resumeItem{Implemented car location estimation algorithm using extended Kalman filter based on LIDAR and RADAR sensors data.}
+	%\resumeItemListEnd
+	
+	%Combine all project in one later
+	%\resumeHeading{Self-Driving Car}{Udacity Nanodegree}{Python, Jupyter, Anaconda, OpenCV, TensorFlow, Keras, C\texttt{++}}{Aug2019 -- Present}
+	%\resumeItemListStart
+	%	\resumeItem{Developed lane-detection software using OpenCV and tested it on a real vehicle.}
+	%	\resumeItem{Used Convolutional Neural Net for traffic sign classification.}
+	%	\resumeItem{Train a Deep Neural Net to drive a car in virtual environment.}
+	%	\resumeItem{Sensor Fusion by implementing an Extended Kalman Filter in C++.}
+	%\resumeItemListEnd
+	
+	\vspace{-2pt}
+	\resumeHeading{Motion Planning for a Robot with Two Anthropomorphic 6-DOF Arms}{MEC529 Robotics}{Matlab}{Mar 2016 -- May 2016}
+	\resumeItemListStart
+	\resumeItem{Inverse Kinematics and Dual Quaternion interpolation based optimal trajectory planning to pick and place objects considering individual arm's workspace and dexterity.}
+	\resumeItemListEnd
+	
+	\vspace{-2pt}
+	\resumeHeading{Interactive Manipulation of NURBS Surfaces}{MEC572 Geometric Modelling}{C\texttt{++}, OpenGL, Qt5}{Mar 2016 -- May 2016}
+	\resumeItemListStart
+	\resumeItem{OpenGL based implementation in C\texttt{++} for interactive manipulation of Non Uniform Rational B-Spline Surfaces.}
+	\resumeItemListEnd
+	
+	\resumeHeadingwithDate{Fracture test analysis for compact tension specimen}{Feb 2017 -- May 2017}
+	\resumeItemListStart
+	\resumeItem{Finite element analysis of a fracture specimen to predict and validate deformations at the crack tip using Abacus.}
+	\resumeItemListEnd
+	
+	\vspace{-4pt}
+	\resumeHeadingwithDate{Conceptual Design}{Aug 2015 -- May 2016}
+	\resumeItemListStart
+	\resumeItem{Formulation of design specification/criteria and conceptual design generation of an Ergonomic Nutcracker and Stone Crusher.}
+	\resumeItemListEnd
+	
+	\vspace{-4pt}
+	\resumeHeadingwithDate{Quality Improvement of Aircraft Wing Assembly}{Aug 2015 -- Nov 2015}
+	\resumeItemListStart
+	\resumeItem{Identifying and correcting the root cause for high rejection rate of final assembly using Pareto Charts, Cause and Effect Diagrams, Control Charts and Histograms.}
+	\resumeItemListEnd
+	
+	\vspace{-4pt}
+	\resumeHeadingwithDate{Mold Design and Manufacturing}{May 2012 -- Nov 2012}
+	\resumeItemListStart
+	\resumeItem{Designed and manufactured molds for irrigation industry products for Injection Molding Process.}
+	\resumeItem{Flow Analysis results were used to optimize design and a Pricing Strategy was developed for industry.}
+	\resumeItemListEnd
     
     
     
