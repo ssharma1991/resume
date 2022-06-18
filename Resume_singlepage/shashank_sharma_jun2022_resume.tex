@@ -87,11 +87,11 @@
 
 % Bullet list for details
 \newcommand{\resumeItemListStart}{
-\vspace{-7pt}
+\vspace{-6pt}
 \begin{itemize}[leftmargin=14pt]
 }
 \newcommand{\resumeItemListEnd}{
-\vspace{+7pt}
+\vspace{+6pt}
 \end{itemize}
 }
 
@@ -126,15 +126,14 @@
 \resumeSection{Experience}
 \resumeHeading
 {Dematic, Kion Mobile Automation}{Holland, MI}
-{Machine Learning Engineer}{Sept 2020 -- Present}
+{Machine Learning Engineer (Perception, Localization, and Mapping)}{Sept 2020 -- Present}
 \resumeItemListStart
-\resumeItem{Developing Autonomous Vehicles for warehouse environments as part of the Perception and SLAM team.}
-\resumeItem{Improved performance of our Kalman Filter based Localization algorithm by up to 30\% and Association algorithm by up to 50\%.}
-\resumeItem{Led the standardization of the accuracy-repeatability testing process done on physical test tracks across global teams.}
-\resumeItem{Created calibration procedures for Lidar position/orientation offset, steering encoder offset and traction encoder offset.}
-\resumeItem{Developed a Gazebo-based virtual testing pipeline to improve feature extraction algorithm using hyperparameter tuning.}
-\resumeItem{Developed a ROS and Rviz based playback tool to visualize onboard recorded data and analyze SLAM performance.}
-\resumeItem{Evaluated existing LidarSLAM and VisualSLAM solutions like Gmapping, Octomap, Cartographer and RTABMap.}
+\resumeItem{Developing autonomous vehicles for warehouse environments as part of the on-board software team.}
+\resumeItem{Improved accuracy and robustness of the reflector extraction algorithm leading to sub-centimeter accuracy.}
+\resumeItem{Developed a Gazebo-based virtual testing pipeline to improve line extraction algorithm using hyperparameter tuning.}
+\resumeItem{Improved speed of feature-based association algorithm by 50\%, leading to a 30\% faster localization pipeline. Analyzed real-time CPU utilization of SLAM processes and threads using Valgrind, LTTng, and perf.}
+\resumeItem{Standardized the pallet pick/drop testing at physical warehouses. The accuracy-repeatability analysis was done using an external laser tracking system by Faro. Also, a procedure to calibrate lidar, steering encoder, and traction encoder was created.}
+\resumeItem{Developed a python-based tool to visualize recorded SLAM logs, and automated their offline performance analysis.}
 \resumeItem{Certified \href{https://www.youracclaim.com/go/eCNozIcD}{SAFe (Scaled Agile Framework) Practitioner} and trained to use Scrum, Kanban, and XP in a SAFe environment.}
 \resumeItemListEnd
 
@@ -142,17 +141,8 @@
 {Stony Brook University}{Stony Brook, NY}
 {Research Assistant}{May 2017 -- Aug 2020}
 \resumeItemListStart
-\resumeItem{Developed a Computational Framework for Data-Driven Mechanism Design Innovation supported by a \$450K \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1563413}{NSF grant}.}
-\resumeItem{Designed algorithms for simulation and synthesis of Planar, Spherical, and Spatial single-degree-of-freedom Robotic systems resulting in multiple publications in journals by the American Society of Mechanical Engineers.}
+\resumeItem{Proposed machine learning and algebraic algorithms for simulation and synthesis of complex single-degree-of-freedom robotic systems, resulting in multiple publications in journals by the American Society of Mechanical Engineers.}
 \resumeItem{Created \href{http://cadcam.eng.sunysb.edu/}{MotionGen} a web-based mechanism design framework. Uses MEAN (MongoDB, Express.js, Angular.js, Node.js) stack to create a RESTful web service based on MVC architecture. iOS and Android apps created using Apache Cordova framework.}
-\resumeItem{In-charge of Computer-Aided Design and Innovation Lab and collaborating with a research group of 10+ graduate students.}
-\resumeItemListEnd
-
-\vspace{-5pt}
-\resumeSubheadingWithDate{Teaching Assistant}{Aug 2016 -- Apr 2017}
-\resumeItemListStart
-\resumeItem{Developed \href{http://snappyxo.com/}{SnappyXO}, a laser-cut design-driven robotics platform that enables designing mechanisms, structures, and robots. It has successfully raised \$16K+ on \href{https://www.indiegogo.com/projects/snappyxo-a-design-driven-robotics-education-kit}{Indiegogo} for a crowdfunding campaign.}
-\resumeItem{Advised 250\texttt{+} students in MEC101-Freshman Design Innovation, MEC 102-Engineering Computing, and Vertically Integrated Projects(VIP) Program. The Robot Design projects gained recognition from the Office of President at university.}
 \resumeItemListEnd
 	
 
@@ -166,17 +156,19 @@
 \resumeItem{\textbf{Relevant Courses:} Robotics, Advanced Dynamics, Vibration and Control, Kinematic Analysis and Synthesis,  Applied Stress Analysis, Product Design Optimization, Geometric Modeling, Analysis of Algorithms}
 \resumeItemListEnd
 
-\resumeHeading{Udacity, School of Autonomous Systems}{Mountain View, CA}{Self Driving Car Engineer Nanodegree}{Mar 2019 -- Mar 2020}
-\resumeItemListStart
-\resumeItem{\textbf{Relevant Areas:} Computer Vision, Deep Learning, Sensor Fusion, Localization, Planning, Control, System Integration}
-\resumeItemListEnd
-
 
 
 %-----------PROJECTS-----------------
 \resumeSection{Relevant Projects}
     
-    \resumeHeading{Self Driving Car subsystem design and integration}{Udacity}{Python, Jupyter, OpenCV, TensorFlow, Keras, C\texttt{++}, ROS}{May 2019 -- Aug 2019}
+    \resumeHeading{Robotics Software Engineer Nanodegree Program}{Udacity}{C\texttt{++}, Python, ROS, Gazebo, AMCL, gmapping, RTABMap}{Apr 2021 -- Apr 2022}
+    \resumeItemListStart
+    \resumeItem{Simulated Automated Guided vehicles (AGVs) and Autonomous Mobile Robots (AMRs) in a warehouse environment.}
+    \resumeItem{Mapped a virtual environment, by manually moving an AGV and creating an occupancy grid map. The AGV only had a 2D lidar sensor on it. Localized an AMR using the same map while controlling it manually or autonomously using path planning. Simulated a complete pick and drop operation. ROS packages like gmapping, AMCL, and move\_base were used.}
+    \resumeItem{Used SLAM to manually move an AMR through a virtual environment and create a loop-closed 3D graph map using RTAB-Map. The AMR used a 3D camera and a 2D lidar sensor to create the map for localization.}
+    \resumeItemListEnd
+    
+    \resumeHeading{Self Driving Car Engineer Nanodegree Program}{Udacity}{Python, Jupyter, OpenCV, TensorFlow, Keras, C\texttt{++}, ROS}{Mar 2019 -- Mar 2020}
     \resumeItemListStart
     \resumeItem{Detection: A robust image processing pipeline is created to detect highway lanes in dashcam live-feed.}
     \resumeItem{Perception: Car's position within lane and lane curvature is calculated using bird's eye view (BEV) and polynomial fitting.}
@@ -185,7 +177,7 @@
     \resumeItem{Sensor Fusion: Car location is estimated using an extended Kalman filter which acts on LIDAR and RADAR sensors data.}
     \resumeItem{Localization: A 2D particle filter for sparse localization is designed and uses GPS and sensor data with a landmark map.}
     \resumeItem{Trajectory Planning: A Finite State Machine based planner is created to achieve autonomous highway driving with other cars.}
-    \resumeItem{Control: A PID controller is implemented to maneuver a vehicle around a virtual track using steering, throttle and brake.}
+    \resumeItem{Control: A PID controller is implemented to maneuver a vehicle around a virtual track using steering, throttle, and brake.}
     \resumeItem{System Integration: Robot Operation System (ROS) is used to robustly combine Perception, Planning, and Control.}
     \resumeItemListEnd
 
@@ -197,7 +189,7 @@
 	\resumeItem{\textbf{Robotics hardware :}  Nvidia Jetson (Nano and Xavier NX), 2D and 3D Lidar (Sick, Ouster, and Velodyne), RGBD camera (Intel Realsense D455), steering and traction encoder, IMU, Raspberry Pi, Arduino}
 	\resumeItem{\textbf{Robotics software :} Keras, Tensorflow, PyTorch, ROS, Gazebo, Rviz, Anaconda, Jupyter, OpenCV, Scikit, Pandas}
 	\resumeItem{\textbf{Programming Languages :} C\texttt{++}, Python, Javascript, Matlab, Mathematica, Delphi}
-	\resumeItem{\textbf{Tools :} Git, Virtual box, Jenkins (Unit and Integration testing), Msgpack, Valgrind}
+	\resumeItem{\textbf{Tools :} Git, Virtual box, Jenkins (Unit and Integration testing), Msgpack, Valgrind, LTTng}
 	\resumeItemListEnd
 
 
