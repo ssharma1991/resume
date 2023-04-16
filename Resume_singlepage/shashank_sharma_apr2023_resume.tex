@@ -96,13 +96,15 @@
 }
 
 \newcommand{\resumeItem}[1]{
+  \linespread{.95}
+  \selectfont
   \item\small{
       {#1 \vspace{-7pt}
       }
   }
+  \linespread{1}
+  \selectfont
 }
-
-\renewcommand{\labelitemii}{$\circ$}
 
 
 %-------------------------------------------
@@ -128,13 +130,15 @@
 {Dematic, Kion Mobile Automation}{Holland, MI}
 {Machine Learning Engineer (Perception, Localization, and Mapping)}{Sept 2020 -- Present}
 \resumeItemListStart
-\resumeItem{Developing autonomous vehicles for warehouse environments as part of the on-board software team.}
+\resumeItem{Developing  on-board software for autonomous vehicles(AGVs) in warehouse environments.}
 \resumeItem{Improved accuracy and robustness of the reflector extraction algorithm leading to sub-centimeter accuracy.}
 \resumeItem{Developed a Gazebo-based virtual testing pipeline to improve line extraction algorithm using hyperparameter tuning.}
 \resumeItem{Improved speed of feature-based association algorithm by 50\%, leading to a 30\% faster localization pipeline. Analyzed real-time CPU utilization of SLAM processes and threads using Valgrind, LTTng, and perf.}
-\resumeItem{Standardized the pallet pick/drop testing at physical warehouses. The accuracy-repeatability analysis was done using an external laser tracking system by Faro. Also, a procedure to calibrate lidar, steering encoder, and traction encoder was created.}
-\resumeItem{Developed a python-based tool to visualize recorded SLAM logs, and automated their offline performance analysis.}
-\resumeItem{Certified \href{https://www.youracclaim.com/go/eCNozIcD}{SAFe (Scaled Agile Framework) Practitioner} and trained to use Scrum, Kanban, and XP in a SAFe environment.}
+\resumeItem{Standardized the pallet pick/drop testing at physical warehouses. The accuracy-repeatability analysis was done using an external laser tracking system by Faro. Also, a procedure to calibrate the lidar, steering encoder, and traction encoder was created.}
+\resumeItem{Developed a Python-based tool to visualize recorded mapping logs, and automated their offline performance analysis.}
+\resumeItem{Tackled technical debt in the mapping codebase by reducing complexity, simplifying API, and decoupling tightly connected units. Improved mapping API calls latency by creating caching threads.}
+\resumeItem{Created a commissioning workflow to first map a small warehouse and then localize using the generated map.}
+\resumeItem{Certified \href{https://www.youracclaim.com/go/eCNozIcD}{SAFe (Scaled Agile Framework) Practitioner} and trained to use Scrum, Kanban, and XP in an Agile environment.}
 \resumeItemListEnd
 
 \resumeHeading
@@ -164,21 +168,17 @@
     \resumeHeading{Robotics Software Engineer Nanodegree Program}{Udacity}{C\texttt{++}, Python, ROS, Gazebo, AMCL, gmapping, RTABMap}{Apr 2021 -- Apr 2022}
     \resumeItemListStart
     \resumeItem{Simulated Automated Guided vehicles (AGVs) and Autonomous Mobile Robots (AMRs) in a warehouse environment.}
-    \resumeItem{Mapped a virtual environment, by manually moving an AGV and creating an occupancy grid map. The AGV only had a 2D lidar sensor on it. Localized an AMR using the same map while controlling it manually or autonomously using path planning. Simulated a complete pick and drop operation. ROS packages like gmapping, AMCL, and move\_base were used.}
+    \resumeItem{Mapped a virtual environment, by manually moving an AGV and creating an occupancy grid map. The AGV only had a 2D lidar sensor on it. Localized an AMR using the same map while controlling it manually or autonomously using path planning. Simulated a complete pick-and-drop operation. ROS packages like gmapping, AMCL, and move\_base were used.}
     \resumeItem{Used SLAM to manually move an AMR through a virtual environment and create a loop-closed 3D graph map using RTAB-Map. The AMR used a 3D camera and a 2D lidar sensor to create the map for localization.}
     \resumeItemListEnd
     
     \resumeHeading{Self Driving Car Engineer Nanodegree Program}{Udacity}{Python, Jupyter, OpenCV, TensorFlow, Keras, C\texttt{++}, ROS}{Mar 2019 -- Mar 2020}
     \resumeItemListStart
-    \resumeItem{Detection: A robust image processing pipeline is created to detect highway lanes in dashcam live-feed.}
-    \resumeItem{Perception: Car's position within lane and lane curvature is calculated using bird's eye view (BEV) and polynomial fitting.}
-    \resumeItem{Classification: LeNet inspired convolution neural network is developed to detect and classify 40+ kinds of traffic signs.}
-    \resumeItem{Deep Learning: Cloned human behavior using an end-to-end neural network to autonomously steer a car using camera input.}
-    \resumeItem{Sensor Fusion: Car location is estimated using an extended Kalman filter which acts on LIDAR and RADAR sensor data.}
-    \resumeItem{Localization: A 2D particle filter for sparse localization is designed and uses GPS and sensor data with a landmark map.}
-    \resumeItem{Trajectory Planning: A Finite State Machine based planner is created to achieve autonomous highway driving with other cars.}
-    \resumeItem{Control: A PID controller is implemented to maneuver a vehicle around a virtual track using steering, throttle, and brake.}
-    \resumeItem{System Integration: Robot Operation System (ROS) is used to robustly combine Perception, Planning, and Control.}
+    \resumeItem{Created a robust image processing pipeline to detect highway lanes in dashcam live-feed. The car's position within lane and lane curvature was calculated using bird's eye view (BEV) and polynomial fitting. LeNet-inspired convolution neural network was also developed to detect and classify 40+ kinds of traffic signs.}
+    \resumeItem{Used a 2D particle filter with GPS, sensor data, and landmark map for sparse localization. Also localized using an extended Kalman filter which fused LIDAR and RADAR sensor data.}
+    \resumeItem{Autonomously drove on a virtual highway with other cars using a Finite State Machine based trajectory planner.}
+    \resumeItem{Implemented a PID controller to maneuver a vehicle around a virtual track using steering, throttle, and brake.}
+    \resumeItem{Used Robot Operation System (ROS) framework to robustly integrate Perception, Localization, Planning, and Control.}
     \resumeItemListEnd
 
 
@@ -189,7 +189,7 @@
 	\resumeItem{\textbf{Robotics hardware :}  Nvidia Jetson (Nano and Xavier NX), 2D and 3D Lidar (Sick, Ouster, and Velodyne), RGBD camera (Intel Realsense D455), steering and traction encoder, IMU, Raspberry Pi, Arduino}
 	\resumeItem{\textbf{Robotics software :} Keras, Tensorflow, PyTorch, ROS, Gazebo, Rviz, Anaconda, Jupyter, OpenCV, Scikit, Pandas}
 	\resumeItem{\textbf{Programming Languages :} C\texttt{++}, Python, Javascript, Matlab, Mathematica, Delphi}
-	\resumeItem{\textbf{Tools :} Git, Virtual box, Jenkins (Unit and Integration testing), Msgpack, Valgrind, LTTng}
+	\resumeItem{\textbf{Tools :} Git, Virtual box, LTTng, Perf, Valgrind}
 	\resumeItemListEnd
 
 
@@ -200,7 +200,7 @@
 \resumeItem{Sharma S., Purwar A.; \textbf{A Machine Learning Approach to Solve the Alt–Burmester Problem for Synthesis of Defect-Free Spatial Mechanisms.} ASME J. Computing and Information Science in Engineering; doi:10.1115/1.4051913}
 \resumeItem{Sharma S., Purwar A.; \textbf{Path Synthesis of Defect-Free Spatial 5-SS Mechanisms Using Machine Learning.}, ASME IDETC-CIE2020; doi:10.1115/DETC2020-22731}
 \resumeItem{Sharma S., Purwar A.; \textbf{Unified Motion Synthesis of Spatial Seven-Bar Platform Mechanisms and Planar-Four Bar Mechanisms.}, ASME IDETC-CIE2020; doi:10.1115/DETC2020-22718}
-\resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{A Motion Synthesis Approach to Solving Alt-Burmester Problem by Exploiting Fourier Descriptor Relationship Between Path and Orientation.}, ASME J. Mechanisms Robotics; doi:10.1115/1.4042054}
+\resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{Motion Synthesis Approach to Solving Alt-Burmester Problem by Exploiting Fourier Descriptor Relationship Between Path and Orientation.}, ASME J. Mechanisms Robotics; doi:10.1115/1.4042054}
 \resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{An Optimal Parametrization Scheme for Path Generation Using Fourier Descriptors for Four-Bar Mechanism Synthesis.}, ASME J. Computing and Information Science in Engineering; doi:10.1115/1.4041566}
 \resumeItemListEnd
 
