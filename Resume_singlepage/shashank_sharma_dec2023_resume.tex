@@ -126,18 +126,26 @@
 
 %-----------EXPERIENCE-----------------
 \resumeSection{Experience}
+
+\resumeHeading
+{Lucid Motors}{Newark, CA}
+{Senior Software Engineer Maps and Navigation ADAS/AD}{Nov 2023 -- Present}
+\resumeItemListStart
+\resumeItem{Working on Advanced driver-assistance system (ADAS) and Autonomous Driving (AD) software for Lucid vehicles.}
+\resumeItem{Developing navigation pipeline using data from GNSS and IMU sensors.}
+\resumeItem{Developing sd-map and hd-map pipelines to improve ADAS features like Highway Assist.}
+\resumeItem{Supporting software validation, for Lucid Air Sedan and Gravity SUV, using hardware-in-loop and prototype vehicle testing.}
+\resumeItemListEnd
+
 \resumeHeading
 {Dematic, Kion Mobile Automation}{Holland, MI}
-{Machine Learning Engineer (Perception, Localization, and Mapping)}{Sept 2020 -- Present}
+{Machine Learning Engineer (Perception, Localization, and Mapping)}{Sept 2020 -- Oct 2023 }
 \resumeItemListStart
-\resumeItem{Developing  on-board software for autonomous vehicles(AGVs) in warehouse environments.}
-\resumeItem{Improved accuracy and robustness of the reflector extraction algorithm leading to sub-centimeter accuracy.}
-\resumeItem{Developed a Gazebo-based virtual testing pipeline to improve line extraction algorithm using hyperparameter tuning.}
-\resumeItem{Improved speed of feature-based association algorithm by 50\%, leading to a 30\% faster localization pipeline. Analyzed real-time CPU utilization of SLAM processes and threads using Valgrind, LTTng, and perf.}
-\resumeItem{Standardized the pallet pick/drop testing at physical warehouses. The accuracy-repeatability analysis was done using an external laser tracking system by Faro. Also, a procedure to calibrate the lidar, steering encoder, and traction encoder was created.}
-\resumeItem{Developed a Python-based tool to visualize recorded mapping logs, and automated their offline performance analysis.}
-\resumeItem{Tackled technical debt in the mapping codebase by reducing complexity, simplifying API, and decoupling tightly connected units. Improved mapping API calls latency by creating caching threads.}
-\resumeItem{Created a commissioning workflow to first map a small warehouse and then localize using the generated map.}
+\resumeItem{Developed  on-board software for autonomous vehicles(AGVs) in warehouse environments.}
+\resumeItem{Improved accuracy and robustness of the reflector and line extraction algorithm leading to sub-centimeter accuracy.}
+\resumeItem{Improved speed of feature-based association algorithm by 50\%, leading to a 30\% faster localization pipeline.}
+\resumeItem{Tackled technical debt in the mapping codebase by reducing complexity, simplifying API, and decoupling tightly connected units. Improved mapping API calls latency by creating caching threads. Also, improved the FastSLAM algorithm implementation.}
+\resumeItem{Implemented and integrated obstacle detection (human/ forklift) and pallet detection algorithms using 3D camera data.}
 \resumeItem{Certified \href{https://www.youracclaim.com/go/eCNozIcD}{SAFe (Scaled Agile Framework) Practitioner} and trained to use Scrum, Kanban, and XP in an Agile environment.}
 \resumeItemListEnd
 
@@ -186,9 +194,8 @@
 \resumeSection{Technical Proficiency}
 	\vspace{+7pt}
 	\resumeItemListStart
-	\resumeItem{\textbf{Robotics hardware :}  Nvidia Jetson (Nano and Xavier NX), 2D and 3D Lidar (Sick, Ouster, and Velodyne), RGBD camera (Intel Realsense D455), steering and traction encoder, IMU, Raspberry Pi, Arduino}
-	\resumeItem{\textbf{Robotics software :} Keras, Tensorflow, PyTorch, ROS, Gazebo, Rviz, Anaconda, Jupyter, OpenCV, Scikit, Pandas}
 	\resumeItem{\textbf{Programming Languages :} C\texttt{++}, Python, Javascript, Matlab, Mathematica, Delphi}
+	\resumeItem{\textbf{Robotics software :} Keras, Tensorflow, PyTorch, ROS, Gazebo, Rviz, Anaconda, Jupyter, OpenCV, Scikit, Pandas}
 	\resumeItem{\textbf{Tools :} Git, Virtual box, LTTng, Perf, Valgrind}
 	\resumeItemListEnd
 
