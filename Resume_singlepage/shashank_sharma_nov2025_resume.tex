@@ -1,0 +1,223 @@
+	%-------------------------
+% Resume in Latex
+% Author : Shashank Sharma
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{wasysym}
+\usepackage{fontawesome}
+
+
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = blue %Colour of citations
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+% Main Headings like Company name with Tabular structure of Company & Place // designation & Duration
+\newcommand{\resumeHeading}[4]{
+  \vspace{-2pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \vspace{-2pt}\\ \vspace{1pt}
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+      %\vspace{-5pt}
+}
+% Sub Headings e.g. Project Titles
+\newcommand{\resumeSubheading}[1]{
+ \vspace{-1pt}
+      {\small\textbf{#1}} \\
+      %\vspace{-5pt}
+}
+
+% For another role in same organization
+\newcommand{\resumeSubheadingWithDate}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2}\\
+    \end{tabular*}
+    \vspace{+2pt}
+}
+
+\newcommand{\resumeSubheadingNew}[1]{
+      {\small{#1}} \\
+      %\vspace{-5pt}
+}
+
+% Reducing Gap Between Sections
+\newcommand{\resumeSection}[1]{
+\vspace{-12pt}
+\section{\textbf{#1}}
+}
+
+% Bullet list for details
+\newcommand{\resumeItemListStart}{
+\vspace{-5pt}
+\begin{itemize}[leftmargin=14pt]
+}
+\newcommand{\resumeItemListEnd}{
+\vspace{+5pt}
+\end{itemize}
+}
+
+\newcommand{\resumeItem}[1]{
+  \linespread{.95}
+  \selectfont
+  \item\small{
+      {#1 \vspace{-7pt}
+      }
+  }
+  \linespread{1}
+  \selectfont
+}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	
+	
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+	\href{https://www.linkedin.com/in/ssharma1991/}{linkedin.com/in/ssharma1991} &\textbf{{\LARGE Shashank Sharma}} & \href{mailto:shashank.sharma.1991@outlook.com}{shashank.sharma.1991@outlook.com}\\
+	\href{http://sharmashashank.com/}{sharmashashank.com} & \faHome\, Fremont, California \quad \phone\, 631-512-0029 & \href{https://github.com/ssharma1991}{github.com/ssharma1991}\\
+\end{tabular*}
+\vspace{+2pt}
+
+
+
+%-----------EXPERIENCE-----------------
+\resumeSection{Experience}
+
+\resumeHeading
+{Lucid Motors}{Newark, CA}
+{Senior Software Engineer (Maps and Navigation)}{Nov 2023 -- Present}
+\resumeItemListStart
+\resumeItem{Led development of HD map software on Nvidia Xavier/Orin with QNX, integrating GNSS sensor data with TomTom APIs.}
+\resumeItem{Delivered ADAS features (Lane Change Assist, Adaptive Curve Speed Control, Hands Free Highway Assist) through cross-functional collaboration with platform, perception, motion planning, cloud, and field testing teams.}
+\resumeItem{Enhanced system stability and runtime reliability through memory, CPU, and bandwidth profiling, improving offline performance and reducing error rates.}
+\resumeItem{Created interactive visualization and debugging tools with Folium, Plotly, and QGIS, enhancing map data analysis and accelerating issue resolution in ADAS development.}
+\resumeItemListEnd
+
+\resumeHeading
+{Dematic, Kion Mobile Automation}{Holland, MI}
+{Machine Learning Engineer (Perception, Localization, and Mapping)}{Sept 2020 -- Oct 2023 }
+\resumeItemListStart
+\resumeItem{Developed on-board mapping and localization software for autonomous guided vehicles (AGVs) in warehouse environments.}
+\resumeItem{Achieved sub‑centimeter localization accuracy by refining reflector and line‑extraction algorithms.}
+\resumeItem{Accelerated localization pipeline by 30\% through optimizing feature-based association algorithms.}
+\resumeItem{Reduced technical debt in the mapping codebase by simplifying APIs, decoupling modules, and introducing caching threads; enhanced FastSLAM implementation for robust real‑time performance.}
+\resumeItem{Developed YOLOv3-based perception model for real-time detection of persons, forklifts, and pallets using 3D camera data.}
+\resumeItemListEnd
+
+\resumeHeading
+{Stony Brook University}{Stony Brook, NY}
+{Research Assistant}{May 2017 -- Aug 2020}
+\resumeItemListStart
+\resumeItem{Developed machine‑learning and algebraic algorithms for simulating and synthesizing robotic mechanisms, leading to multiple peer‑reviewed ASME publications.}
+\resumeItem{Built  \href{http://cadcam.eng.sunysb.edu/}{MotionGen}, a web-based mechanism design framework using the MEAN stack, delivering a RESTful service with cross‑platform iOS/Android apps via Apache Cordova.}
+\resumeItemListEnd
+	
+
+
+%-----------EDUCATION-----------------
+\resumeSection{Education}
+\resumeHeading
+{Stony Brook University}{Stony Brook, NY}
+{Ph.D., Mechanical (Concentration: Design and Robotics, Minor: Applied Mathematics), GPA 3.95}{Aug 2015 -- Aug 2020}
+\resumeItemListStart
+\resumeItem{\textbf{Relevant Courses:} Robotics, Dynamics, Control, Kinematics, Stress Analysis, Optimization, Algorithms}
+\resumeItemListEnd
+
+
+
+%-----------PROJECTS-----------------
+\resumeSection{Selected Projects}
+
+% Mapping & Localization
+\resumeSubheading{Mapping \& Localization}
+\resumeItemListStart
+\resumeItem{Developed SLAM pipelines (gmapping, RTAB‑Map) with LiDAR and 3D cameras, generating occupancy grids and loop‑closed maps for robust AGV/AMR localization.}
+\resumeItem{Implemented particle filter and extended Kalman filter for multi-sensor fusion (GPS, LiDAR, RADAR), reducing localization drift under noisy sensor conditions and improving reliability of autonomous navigation pipelines.}
+\resumeItemListEnd
+
+% ML & Perception
+\resumeSubheading{Perception \& Machine Learning}
+\resumeItemListStart
+\resumeItem{Built a stereo‑camera distance estimator for front‑view vehicles. Used SGBM disparity calculation for depth and YOLO for detection, enabling real‑time ADAS perception.}
+\resumeItem{Implemented 3D reconstruction with structure‑from‑motion (SfM). Applied SIFT feature matching, computed fundamental and essential matrices, aligned image sequences, and generated point‑cloud models from monocular data.}
+\resumeItem{Developed a 3D object‑detection framework combining camera and LiDAR. Applied sensor fusion to project point clouds into images, detect objects, and estimate 3D bounding boxes, improving perception accuracy in autonomous driving.}
+\resumeItem{Built a traffic‑sign classification pipeline using CNNs trained on 40+ classes in Keras, achieving over 95\% accuracy.}
+\resumeItem{Created real-time lane detection pipeline using BEV transforms and polynomial fitting.}
+\resumeItemListEnd
+
+% Planning & Control
+\resumeSubheading{Planning \& Control}
+\resumeItemListStart
+\resumeItem{Designed an FSM‑based trajectory planner and PID controller for autonomous highway driving; integrated perception, localization, planning, and control modules within ROS to achieve end‑to‑end autonomy.}
+\resumeItem{Implemented autonomous pick-and-drop operations in Gazebo simulations by combining AMCL-based localization with path planning algorithms, demonstrating full autonomy in simulated warehouse workflows.}
+\resumeItemListEnd
+
+
+
+%-------- SKILLS------------
+\resumeSection{Technical Proficiency}
+	\vspace{+7pt}
+	\resumeItemListStart
+		\resumeItem{\textbf{Programming:} C\texttt{++}, Python, JavaScript, Matlab, Mathematica, Delphi}
+		 \resumeItem{\textbf{Machine Learning \& Robotics:} TensorFlow, PyTorch, Keras, OpenCV, Scikit-learn, Pandas, Open3D, CNNs}
+		 \resumeItem{\textbf{Mapping \& Localization:} ROS, Gazebo, Rviz, gmapping, RTAB-Map, AMCL, EKF, particle filter, QGIS}
+		\resumeItem{\textbf{Tools \& Infrastructure:} Git, Anaconda, Jupyter, VirtualBox, Optimization(LTTng, Perf, Valgrind)}
+	\resumeItemListEnd
+
+
+%-------- RESEARCH PAPERS------------
+\resumeSection{Selected Publications}
+\vspace{+7pt}
+\resumeItemListStart
+\resumeItem{Sharma S., Purwar A.; \textbf{A Machine Learning Approach to Solve the Alt–Burmester Problem for Synthesis of Defect-Free Spatial Mechanisms.} ASME J. Computing and Information Science in Engineering; doi:10.1115/1.4051913}
+\resumeItem{Sharma S., Purwar A.; \textbf{Path Synthesis of Defect-Free Spatial 5-SS Mechanisms Using Machine Learning.}, ASME IDETC-CIE2020; doi:10.1115/DETC2020-22731}
+\resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{Motion Synthesis Approach to Solving Alt-Burmester Problem by Exploiting Fourier Descriptor Relationship Between Path and Orientation.}, ASME J. Mechanisms Robotics; doi:10.1115/1.4042054}
+%\resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{An Optimal Parametrization Scheme for Path Generation Using Fourier Descriptors for Four-Bar Mechanism Synthesis.}, ASME J. Computing and Information Science in Engineering; doi:10.1115/1.4041566}
+\resumeItemListEnd
+
+\end{document}
