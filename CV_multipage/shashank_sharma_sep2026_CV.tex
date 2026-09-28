@@ -138,7 +138,7 @@
 {Lucid Motors}{Newark, CA}
 {Senior Software Engineer - Maps and Navigation, ADAS/AD}{Nov 2023 -- Apr 2026}
 \begin{itemize}
-\resumeItem{Led development of HD map software on NVIDIA Xavier/Orin platforms running QNX, integrating GNSS sensor data with TomTom APIs.}
+\resumeItem{Led development of HD map software on Nvidia Xavier/Orin with QNX, integrating GNSS sensor data with TomTom APIs.}
 \resumeItem{Delivered ADAS features (Lane Change Assist, Adaptive Curve Speed Control, Hands-Free Highway Assist) through cross-functional collaboration with platform, perception, motion planning, cloud, and field testing teams.}
 \resumeItem{Enhanced system stability and runtime reliability through memory, CPU, and bandwidth profiling, improving offline performance and reducing error rates.}
 \resumeItem{Used RoboSense Ruby LiDAR and OxTS GNSS to run LIO-SAM SLAM on short driving clips. Applied Removert for dynamic-object detection and point-cloud filtering to produce static maps. Improved the accuracy and reliability of the autolabeling pipeline.}
@@ -150,15 +150,15 @@
 {Dematic (Kion Mobile Automation)}{Holland, MI}
 {Machine Learning Engineer - Perception, Localization and Mapping}{Sept 2020 -- Oct 2023}
 \begin{itemize}
-\resumeItem{Developed onboard software for autonomous vehicles (AGVs) in warehouse environments.}
-\resumeItem{Improved the accuracy and robustness of the reflector extraction algorithm, enabling sub-centimeter localization accuracy.}
-\resumeItem{Developed a Gazebo-based virtual testing pipeline to improve the line-extraction algorithm using hyperparameter tuning.}
+\resumeItem{Developed onboard mapping and localization software for autonomous guided vehicles (AGVs) in warehouse environments.}
+\resumeItem{Achieved sub‑centimeter localization accuracy by refining reflector and line‑extraction algorithms.}
 \resumeItem{Improved the speed of the feature-based association algorithm by 50\%, resulting in a 30\% faster localization pipeline. Analyzed real-time CPU utilization of SLAM processes and threads using Valgrind, LTTng, and perf.}
+\resumeItem{Developed a Gazebo-based virtual testing pipeline to improve the line-extraction algorithm using hyperparameter tuning.}
 \resumeItem{Standardized the pallet pick/drop testing at physical warehouses. Performed accuracy and repeatability analysis using an external FARO laser-tracking system. Also, a procedure to calibrate the lidar, steering encoder, and traction encoder was created.}
 \resumeItem{Developed a Python-based tool to visualize recorded mapping logs, and automated their offline performance analysis.}
-\resumeItem{Tackled technical debt in the mapping codebase by reducing complexity, simplifying API, and decoupling tightly connected units. Improved mapping API call latency by creating caching threads.}
+\resumeItem{Developed YOLOv3-based perception model for real-time detection of persons, forklifts, and pallets using 3D camera data.}
+\resumeItem{Reduced technical debt in the mapping codebase by simplifying APIs, decoupling modules, and introducing caching threads; enhanced FastSLAM implementation for robust real‑time performance.}
 \resumeItem{Created a commissioning workflow to first map a small warehouse and then localize using the generated map.}
-\resumeItem{Implemented and integrated human/forklift obstacle detection and pallet detection algorithms using 3D camera data.}
 \resumeItem{Certified \href{https://www.youracclaim.com/go/eCNozIcD}{SAFe (Scaled Agile Framework) Practitioner} and trained to use Scrum, Kanban, and XP in an Agile environment.}
 \end{itemize}
 
@@ -167,8 +167,8 @@
 {Research Assistant}{May 2017 -- Aug 2020}
 \begin{itemize}
 \resumeItem{Developed a computational framework for data-driven mechanism design innovation supported by a \$450K \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1563413}{NSF grant}.}
-\resumeItem{Designed machine learning and algebraic algorithms for the simulation and synthesis of planar, spherical, and spatial single-degree-of-freedom robotic systems, resulting in multiple publications in ASME journals.}
-\resumeItem{Created \href{http://cadcam.eng.sunysb.edu/}{MotionGen}, a web-based mechanism design framework using the MEAN (MongoDB, Express.js, Angular.js, Node.js) stack and MVC architecture to provide a RESTful web service; developed iOS and Android apps using Apache Cordova.}
+\resumeItem{Designed machine‑learning and algebraic algorithms for simulating and synthesizing robotic mechanisms, leading to multiple peer‑reviewed ASME publications.}
+\resumeItem{Created \href{http://cadcam.eng.sunysb.edu/}{MotionGen}, a web-based mechanism design framework using the MEAN (MongoDB, Express.js, Angular.js, Node.js) stack and MVC architecture to provide a RESTful service  with cross‑platform iOS/Android apps via Apache Cordova.}
 \resumeItem{Managed the Computer-Aided Design and Innovation Lab and collaborated with a research group of 10+ graduate students.}
 \end{itemize}
 
@@ -275,18 +275,26 @@
 
 %-------- SKILLS------------
 \section{Technical Proficiency}
-    \begin{itemize}
-    \resumeItem{\textbf{Robotics hardware :}  NVIDIA Jetson (Nano and Xavier NX), 2D and 3D LiDAR (Sick, Ouster, and Velodyne), RGB-D camera (Intel Realsense D455), steering and traction encoder, IMU, Raspberry Pi, Arduino}
-    \resumeItem{\textbf{Robotics software :} Keras, TensorFlow, PyTorch, ROS, Gazebo, RViz, Anaconda, Jupyter, OpenCV, scikit-learn, Pandas}
-    \resumeItem{\textbf{Programming Languages :} C++, Python, JavaScript, MATLAB, Mathematica, Delphi}
-    \resumeItem{\textbf{Tools :} Git, VirtualBox, LTTng, Perf, Valgrind}
-    \resumeItem{\textbf{CAD/CAE :} SolidWorks, Autodesk Inventor, PTC Creo, CATIA, ANSYS (CFD and Mechanical), Autodesk AutoCAD, Autodesk Moldflow, FeatureCAM, MSC Adams, ZWCAD, Altair HyperMesh, Altair OptiStruct, Materialise Magics, Materialise Mimics, CNC G-code}
-    \end{itemize}
+\begin{itemize}
+\resumeItem{\textbf{Programming :} C++, Python, JavaScript, MATLAB, Mathematica, Delphi}
+\resumeItem{\textbf{Machine Learning \& Robotics:} TensorFlow, PyTorch, Keras, OpenCV, Scikit-learn, Pandas, Open3D, CNNs}
+\resumeItem{\textbf{Mapping \& Localization:} ROS, Gazebo, Rviz, gmapping, RTAB-Map, AMCL, EKF, particle filter, QGIS}
+\resumeItem{\textbf{Tools \& Infrastructure:} Git, Anaconda, Jupyter, VirtualBox, Optimization(LTTng, Perf, Valgrind)}
+\resumeItem{\textbf{Robotics hardware :}  NVIDIA Jetson (Nano and Xavier NX), 2D and 3D LiDAR (Sick, Ouster, and Velodyne), RGB-D camera (Intel Realsense D455), steering and traction encoder, IMU, Raspberry Pi, Arduino}
+\resumeItem{\textbf{CAD/CAE :} SolidWorks, Autodesk Inventor, PTC Creo, CATIA, ANSYS (CFD and Mechanical), Autodesk AutoCAD, Autodesk Moldflow, FeatureCAM, MSC Adams, ZWCAD, Altair HyperMesh, Altair OptiStruct, Materialise Magics, Materialise Mimics, CNC G-code}
+\end{itemize}
 
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
+
+\resumeHeadingTwoLine{3D Computer Vision }{Think Autonomous}{C++, Python, ROS, Gazebo, AMCL, gmapping, RTABMap}{Sep 2025 -- Dec 2025}
+\begin{itemize}
+\resumeItem{Built a stereo‑camera distance estimator for front‑view vehicles. Used SGBM disparity calculation for depth and YOLO for detection, enabling real‑time ADAS perception.}
+\resumeItem{Implemented 3D reconstruction with structure‑from‑motion (SfM). Applied SIFT feature matching, computed fundamental and essential matrices, aligned image sequences, and generated 3D point‑cloud models from monocular data.}
+\resumeItem{Developed a 3D object‑detection framework combining camera and LiDAR. Applied sensor fusion to project point clouds into images, detect objects, and estimated 3D bounding boxes, improving perception accuracy in autonomous driving.}
+\end{itemize}
 
 \resumeHeadingTwoLine{Autonomous Robot Navigation}{Udacity}{C++, Python, ROS, Gazebo, AMCL, gmapping, RTABMap}{Apr 2021 -- Apr 2022}
 \begin{itemize}
@@ -299,8 +307,9 @@
 
 \resumeHeadingTwoLine{Self Driving Car subsystem design and integration}{Udacity}{Python, Jupyter, OpenCV, TensorFlow, Keras, C++, ROS}{May 2019 -- Aug 2019}
 \begin{itemize}
-\resumeItem{Created a robust image processing pipeline to detect highway lanes in dashcam live-feed. The car's position within lane and lane curvature was calculated using bird's eye view (BEV) and polynomial fitting. LeNet-inspired convolution neural network was also developed to detect and classify 40+ kinds of traffic signs.}
-\resumeItem{Used a 2D particle filter with GPS, sensor data, and landmark map for sparse localization. Also localized using an extended Kalman filter which fused LIDAR and RADAR sensor data.}
+\resumeItem{Implemented particle filter and extended Kalman filter for multi-sensor fusion (GPS, LiDAR, RADAR), reducing localization drift under noisy sensor conditions and improving reliability of autonomous navigation pipelines.}
+\resumeItem{Built a traffic‑sign classification pipeline using CNNs trained on 40+ classes in Keras, achieving over 95\% accuracy.}
+\resumeItem{Created real-time lane detection pipeline using BEV transforms and polynomial fitting.}
 \resumeItem{Autonomously drove on a virtual highway with other cars using a Finite State Machine based trajectory planner.}
 \resumeItem{Implemented a PID controller to maneuver a vehicle around a virtual track using steering, throttle, and brake.}
 \resumeItem{Used Robot Operating System (ROS) framework to robustly integrate Perception, Localization, Planning, and Control.}
