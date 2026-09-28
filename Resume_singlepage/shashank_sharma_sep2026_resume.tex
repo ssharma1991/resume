@@ -105,18 +105,17 @@
 
 \resumeHeadingTwoLine
 {Lucid Motors}{Newark, CA}
-{Senior Software Engineer (Maps and Navigation)}{Nov 2023 -- Present}
+{Senior Software Engineer - Maps and Navigation, ADAS/AD}{Nov 2023 -- Apr 2026}
 \begin{itemize}
 \resumeItem{Led development of HD map software on Nvidia Xavier/Orin with QNX, integrating GNSS sensor data with TomTom APIs.}
 \resumeItem{Delivered ADAS features (Lane Change Assist, Adaptive Curve Speed Control, Hands-Free Highway Assist) through cross-functional collaboration with platform, perception, motion planning, cloud, and field testing teams.}
-\resumeItem{Enhanced system stability and runtime reliability through memory, CPU, and bandwidth profiling, improving offline performance and reducing error rates.}
-\resumeItem{Used RoboSense Ruby LiDAR and OxTS GNSS to run LIO-SAM SLAM on short driving clips. Applied Removert for dynamic-object detection and point-cloud filtering to produce static maps. Improved the accuracy and reliability of the autolabeling pipeline.}
+\resumeItem{Used RoboSense Ruby LiDAR and OxTS GNSS to run LIO-SAM SLAM on short driving clips. Applied Removert for dynamic-object detection and point-cloud filtering to produce static maps. Improved autolabeling accuracy and reliability.}
 \resumeItem{Created interactive visualization and debugging tools with Folium, Plotly, and QGIS, enhancing map data analysis and accelerating issue resolution for ADAS development.}
 \end{itemize}
 
 \resumeHeadingTwoLine
-{Dematic, Kion Mobile Automation}{Holland, MI}
-{Machine Learning Engineer (Perception, Localization, and Mapping)}{Sept 2020 -- Oct 2023 }
+{Dematic (Kion Mobile Automation)}{Holland, MI}
+{Machine Learning Engineer - Perception, Localization and Mapping}{Sept 2020 -- Oct 2023}
 \begin{itemize}
 \resumeItem{Developed onboard mapping and localization software for autonomous guided vehicles (AGVs) in warehouse environments.}
 \resumeItem{Achieved sub‑centimeter localization accuracy by refining reflector and line‑extraction algorithms.}
@@ -125,14 +124,6 @@
 \resumeItem{Developed YOLOv3-based perception model for real-time detection of persons, forklifts, and pallets using 3D camera data.}
 \end{itemize}
 
-\resumeHeadingTwoLine
-{Stony Brook University}{Stony Brook, NY}
-{Research Assistant}{May 2017 -- Aug 2020}
-\begin{itemize}
-\resumeItem{Developed machine‑learning and algebraic algorithms for simulating and synthesizing robotic mechanisms, leading to multiple peer‑reviewed ASME publications.}
-\resumeItem{Created \href{http://cadcam.eng.sunysb.edu/}{MotionGen}, a web-based mechanism design framework using the MEAN (MongoDB, Express.js, Angular.js, Node.js) stack and MVC architecture to provide a RESTful service  with cross‑platform iOS/Android apps via Apache Cordova.}
-\end{itemize}
-	
 
 
 %-----------EDUCATION-----------------
@@ -141,7 +132,8 @@
 {Stony Brook University}{Stony Brook, NY}
 {Ph.D. and M.S. in Mechanical Engineering (Design and Robotics; Minor: Applied Mathematics), GPA 3.95}{Aug 2015 -- Aug 2020}
 \begin{itemize}
-\resumeItem{\textbf{Relevant Courses:} Robotics, Dynamics, Control, Kinematics, Stress Analysis, Optimization, Algorithms}
+\resumeItem{Developed machine‑learning and algebraic algorithms for simulating and synthesizing kinematic robotic mechanisms, leading to multiple peer‑reviewed ASME publications.}
+\resumeItem{Created \href{http://cadcam.eng.sunysb.edu/}{MotionGen}, a web-based mechanism design framework using the MEAN (MongoDB, Express.js, Angular.js, Node.js) stack and MVC architecture to provide a RESTful service  with cross‑platform iOS/Android apps via Apache Cordova.}
 \end{itemize}
 
 
@@ -149,39 +141,27 @@
 %-----------PROJECTS-----------------
 \section{Selected Projects}
 
-% Mapping & Localization
-\resumeSubheading{Mapping \& Localization}{}
+\resumeSubheading{Perception and Machine Learning}{}
+\begin{itemize}
+\resumeItem{Built a stereo‑camera distance estimator for front‑view vehicles. Used SGBM disparity calculation for depth and YOLO for detection, enabling real‑time ADAS perception.}
+\resumeItem{Implemented 3D reconstruction with structure‑from‑motion (SfM). Applied SIFT feature matching, computed fundamental and essential matrices, aligned image sequences, and generated 3D point‑cloud models from monocular data.}
+\resumeItem{Developed a 3D object‑detection framework combining camera and LiDAR. Applied sensor fusion to project point clouds into images, detect objects, and estimate 3D bounding boxes, improving perception accuracy in autonomous driving.}
+\end{itemize}
+
+\resumeSubheading{Mapping and Localization}{}
 \begin{itemize}
 \resumeItem{Developed SLAM pipelines (gmapping, RTAB‑Map) with LiDAR and 3D cameras, generating occupancy grids and loop‑closed maps for robust AGV/AMR localization.}
 \resumeItem{Implemented particle filter and extended Kalman filter for multi-sensor fusion (GPS, LiDAR, RADAR), reducing localization drift under noisy sensor conditions and improving reliability of autonomous navigation pipelines.}
 \end{itemize}
 
-% ML & Perception
-\resumeSubheading{Perception \& Machine Learning}{}
-\begin{itemize}
-\resumeItem{Built a stereo‑camera distance estimator for front‑view vehicles. Used SGBM disparity calculation for depth and YOLO for detection, enabling real‑time ADAS perception.}
-\resumeItem{Implemented 3D reconstruction with structure‑from‑motion (SfM). Applied SIFT feature matching, computed fundamental and essential matrices, aligned image sequences, and generated 3D point‑cloud models from monocular data.}
-\resumeItem{Developed a 3D object‑detection framework combining camera and LiDAR. Applied sensor fusion to project point clouds into images, detect objects, and estimated 3D bounding boxes, improving perception accuracy in autonomous driving.}
-\resumeItem{Built a traffic‑sign classification pipeline using CNNs trained on 40+ classes in Keras, achieving over 95\% accuracy.}
-\resumeItem{Created real-time lane detection pipeline using BEV transforms and polynomial fitting.}
-\end{itemize}
-
-% Planning & Control
-\resumeSubheading{Planning \& Control}{}
-\begin{itemize}
-\resumeItem{Designed an FSM trajectory planner and PID controller for autonomous highway driving; integrated perception, localization, planning, and control modules within ROS to achieve end‑to‑end autonomy.}
-\resumeItem{Implemented autonomous pick-and-drop operations in Gazebo simulations by combining AMCL-based localization with path planning algorithms, demonstrating full autonomy in simulated warehouse workflows.}
-\end{itemize}
-
-
 
 %-------- SKILLS------------
-\section{Technical Proficiency}
+\section{Technical Skills}
 \begin{itemize}
 \resumeItem{\textbf{Programming:} C++, Python, JavaScript, Matlab, Mathematica, Delphi}
 \resumeItem{\textbf{Machine Learning \& Robotics:} TensorFlow, PyTorch, Keras, OpenCV, Scikit-learn, Pandas, Open3D, CNNs}
 \resumeItem{\textbf{Mapping \& Localization:} ROS, Gazebo, Rviz, gmapping, RTAB-Map, AMCL, EKF, particle filter, QGIS}
-\resumeItem{\textbf{Tools \& Infrastructure:} Git, Anaconda, Jupyter, VirtualBox, Optimization(LTTng, Perf, Valgrind)}
+\resumeItem{\textbf{Tools \& Infrastructure:} Git, Anaconda, Jupyter, VirtualBox, LTTng, Perf, Valgrind}
 \end{itemize}
 
 
@@ -189,9 +169,7 @@
 \section{Selected Publications}
 \begin{itemize}
 \resumeItem{Sharma S., Purwar A.; \textbf{A Machine Learning Approach to Solve the Alt–Burmester Problem for Synthesis of Defect-Free Spatial Mechanisms.} ASME J. Computing and Information Science in Engineering; doi:10.1115/1.4051913}
-\resumeItem{Sharma S., Purwar A.; \textbf{Path Synthesis of Defect-Free Spatial 5-SS Mechanisms Using Machine Learning.}, ASME IDETC-CIE2020; doi:10.1115/DETC2020-22731}
 \resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{Motion Synthesis Approach to Solving Alt-Burmester Problem by Exploiting Fourier Descriptor Relationship Between Path and Orientation.}, ASME J. Mechanisms Robotics; doi:10.1115/1.4042054}
-%\resumeItem{Sharma S., Purwar A., Ge Q.J.; \textbf{An Optimal Parametrization Scheme for Path Generation Using Fourier Descriptors for Four-Bar Mechanism Synthesis.}, ASME J. Computing and Information Science in Engineering; doi:10.1115/1.4041566}
 \end{itemize}
 
 \end{document}
