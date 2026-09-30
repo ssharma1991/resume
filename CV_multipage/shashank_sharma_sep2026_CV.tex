@@ -49,7 +49,12 @@
   partopsep=0pt
 }
 
-% Resume headings
+% Resume custom commands
+\newcommand{\resumeSection}[1]{%
+  \needspace{5\baselineskip}%
+  \section{#1}%
+}
+
 \newcommand{\resumeHeadingTwoLine}[4]{%
   \needspace{3\baselineskip}%
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -59,12 +64,14 @@
 }
 
 \newcommand{\resumeHeadingOneLine}[2]{%
+  \needspace{3\baselineskip}%
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     \textbf{#1} & \textit{\small #2}
   \end{tabular*}%
 }
 
 \newcommand{\resumeSubheading}[2]{%
+  \needspace{3\baselineskip}%
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     \textit{\small #1} & \textit{\small #2}
   \end{tabular*}%
@@ -72,13 +79,9 @@
 
 \newcommand{\resumeItem}[1]{\item\small #1}
 
-%-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-
-
-%----------HEADING-----------------
+%----------------------------------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
     \href{https://www.linkedin.com/in/ssharma1991/}{linkedin.com/in/ssharma1991} &
     \textbf{\LARGE Shashank Sharma} &
@@ -90,8 +93,8 @@
 
 
 
-%-----------EXPERIENCE-----------------
-\section{Experience}
+%----------------------------------------
+\resumeSection{Experience}
 
 \resumeHeadingTwoLine
 {NVIDIA}{Santa Clara, CA}
@@ -128,7 +131,6 @@
 \resumeItem{Developed YOLOv3-based perception model for real-time detection of persons, forklifts, and pallets using 3D camera data.}
 \resumeItem{Reduced technical debt in the mapping codebase by simplifying APIs, decoupling modules, and introducing caching threads; enhanced FastSLAM implementation for robust real‑time performance.}
 \resumeItem{Created a commissioning workflow to first map a small warehouse and then localize using the generated map.}
-\resumeItem{Certified \href{https://www.youracclaim.com/go/eCNozIcD}{SAFe (Scaled Agile Framework) Practitioner} and trained to use Scrum, Kanban, and XP in an Agile environment.}
 \end{itemize}
 
 \resumeHeadingTwoLine
@@ -203,14 +205,8 @@
 
 
 
-%-----------EDUCATION-----------------
-\section{Education}
-
-\resumeHeadingTwoLine{Udacity, School of Autonomous Systems}{Online}
-{Robotics Software Engineer Nanodegree Program}{Apr 2021 -- Apr 2022}
-\begin{itemize}
-\resumeItem{\textbf{Relevant Areas:} ROS, Gazebo, Localization, Mapping, SLAM, Navigation, and Path Planning}
-\end{itemize}
+%----------------------------------------
+\resumeSection{Education}
 
 \resumeHeadingTwoLine
 {Stony Brook University}{Stony Brook, NY}
@@ -218,12 +214,6 @@
 \begin{itemize}
 \resumeItem{\textbf{Concentration:} Design and Robotics, \textbf{Minor:} Applied Mathematics}
 \resumeItem{\textbf{Relevant Courses:} Robotics, Advanced Dynamics, Vibration and Control, Kinematic Analysis and Synthesis,  Applied Stress Analysis, Product Design Optimization, Geometric Modeling, Analysis of Algorithms}
-\end{itemize}
-
-\resumeHeadingTwoLine{Udacity, School of Autonomous Systems}{Online}
-{Self Driving Car Engineer Nanodegree}{Mar 2019 -- Mar 2020}
-\begin{itemize}
-\resumeItem{\textbf{Relevant Areas:} Computer Vision, Deep Learning, Sensor Fusion, Localization, Planning, Control, System Integration}
 \end{itemize}
 
 \resumeHeadingTwoLine{Indian Institute of Information Technology}{Jabalpur, India}
@@ -234,8 +224,8 @@
 
 
 
-%-------- PUBLICATIONS ------------
-\section{Publications}
+%----------------------------------------
+\resumeSection{Publications}
 
 \resumeHeadingOneLine{Ph.D. Dissertation}{}
 \begin{itemize}
@@ -261,8 +251,31 @@
 
 
 
-%-------- AWARDS------------
-\section{Awards}
+%----------------------------------------
+\resumeSection{Training and Certifications}
+
+\resumeHeadingTwoLine{Udacity, School of Autonomous Systems}{}
+{Robotics Software Engineer Nanodegree Program}{Apr 2021 -- Apr 2022}
+\begin{itemize}
+\resumeItem{\textbf{Relevant Areas:} ROS, Gazebo, Localization, Mapping, SLAM, Navigation, and Path Planning}
+\end{itemize}
+
+\resumeHeadingTwoLine{Scaled Agile, Inc.}{}
+{Certified \href{https://www.youracclaim.com/go/eCNozIcD}{SAFe (Scaled Agile Framework) Practitioner}}{Jan 2021 -- Mar 2021}
+\begin{itemize}
+\resumeItem{\textbf{Relevant Areas:} Program increment and Iteration planning, Scrum, Kanban, XP, and built-in quality}
+\end{itemize}
+
+\resumeHeadingTwoLine{Udacity, School of Autonomous Systems}{}
+{Self Driving Car Engineer Nanodegree}{Mar 2019 -- Mar 2020}
+\begin{itemize}
+\resumeItem{\textbf{Relevant Areas:} Computer Vision, Deep Learning, Sensor Fusion, Localization, Planning, Control, System Integration}
+\end{itemize}
+
+
+
+%----------------------------------------
+\resumeSection{Awards}
 
 \begin{itemize}
 \resumeItem{Invited by the American Society of Mechanical Engineers (ASME) multiple times to review journal manuscripts.}
@@ -273,8 +286,8 @@
 
 
 
-%-------- SKILLS------------
-\section{Technical Skills}
+%----------------------------------------
+\resumeSection{Technical Skills}
 \begin{itemize}
 \resumeItem{\textbf{Programming :} C++, Python, JavaScript, MATLAB, Mathematica, Delphi}
 \resumeItem{\textbf{Machine Learning \& Robotics:} TensorFlow, PyTorch, Keras, OpenCV, Scikit-learn, Pandas, Open3D, CNNs}
@@ -286,8 +299,8 @@
 
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
+%----------------------------------------
+\resumeSection{Projects}
 
 \resumeHeadingTwoLine{3D Computer Vision }{Think Autonomous}{C++, Python, ROS, Gazebo, AMCL, gmapping, RTABMap}{Sep 2025 -- Dec 2025}
 \begin{itemize}
